@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logroot-agent"
+version = "0.1.0"
+description = "LLM agent for log anomaly detection and root-cause analysis"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["requests"]
+
+[project.scripts]
+logroot = "logroot.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["logroot*"]
