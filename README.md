@@ -1,5 +1,9 @@
 # logroot-agent
 
+[![CI](https://github.com/bolongpa/logroot-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/bolongpa/logroot-agent/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](pyproject.toml)
+
 An LLM agent that triages log anomalies and writes root-cause analyses —
 the boring, high-leverage part of being on-call, automated.
 
@@ -204,6 +208,25 @@ detection drowns in cardinality.
 - [ ] More detectors: log-volume anomalies, deploy-correlation (did errors start right after a deploy marker?)
 - [ ] Output sinks: Slack/PD-friendly summaries, JSON report export
 - [ ] Eval harness: labeled incident corpus measuring detection precision/recall and report quality
+
+## Evaluation status
+
+Example outputs in this README come from the deterministic offline demo (`FakeLLM`) on synthetic logs — they demonstrate the detection and investigation mechanics, not real-incident performance. No detection precision/recall numbers are claimed; an eval harness on a labeled incident corpus is on the Roadmap.
+
+## Citation
+
+If you use this project in academic or technical work, please cite it as:
+
+```bibtex
+@software{pan2026logrootagent,
+  author = {Bolong Pan},
+  title = {logroot-agent: LLM agent for log anomaly detection and root-cause analysis},
+  year = {2026},
+  url = {https://github.com/bolongpa/logroot-agent}
+}
+```
+
+A Zenodo DOI will be added here once minted.
 
 ## License
 
