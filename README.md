@@ -222,11 +222,12 @@ If you use this project in academic or technical work, please cite it as:
   author = {Bolong Pan},
   title = {logroot-agent: LLM agent for log anomaly detection and root-cause analysis},
   year = {2026},
-  url = {https://github.com/bolongpa/logroot-agent}
+  url = {https://github.com/bolongpa/logroot-agent},
+  doi = {10.5281/zenodo.23034526}
 }
 ```
 
-A Zenodo DOI will be added here once minted.
+DOI: [10.5281/zenodo.23034526](https://doi.org/10.5281/zenodo.23034526)
 
 ## License
 
